@@ -20,7 +20,7 @@ await connectCloudinary()
 
 
 // Alloow multiple origins
-const allowedOrigins = ['http://localhost:5173','https://fresh-cart-2ers7vk1y-n-aishwaryas-projects.vercel.app']
+const allowedOrigins = ['http://localhost:5173','https://fresh-cart-beige-sigma.vercel.app']
 
 
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
