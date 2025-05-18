@@ -113,7 +113,7 @@ export const stripeWebhooks = async(req,res)=>{
         event = stripeInstance.webhooks.constructEvent(
             req.body,
             sig,
-            process.env.STRIPE_WEBHOOK_SECRET
+            process.env.STRIPE_WEBHOOK_KEY
         );
     } catch (error) {
         res.status(400).send(`Webhook Error:${error.message}`);
